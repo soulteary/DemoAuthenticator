@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "minimum_chrome_version": "48",
+    "name": "DemoAuthenticator",
+    "version": "0.1.0",
+    "description": "A simple demo authenticator.",
+    "icons": {
+        "128": "image/icon-128x128.png"
+    },
+    "browser_action": {
+        "default_icon": "image/icon-128x128.png",
+        "default_title": "Demo Authenticator"
+    },
+    "homepage_url": "https://github.com/soulteary/DemoAuthenticator",
+    "author": "soulteary",
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "script/background.js"
+        ]
+    },
+    "permissions": [
+        "http://*/",
+        "https://*/",
+        "<all_urls>",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking"
+    ]
+}
